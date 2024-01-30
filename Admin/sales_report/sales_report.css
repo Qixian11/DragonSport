@@ -1,0 +1,403 @@
+
+.body .body-content
+{
+    padding:3vh 1.5vw 3vh;
+    width:auto; 
+    height:200vh;
+
+}
+
+.body .body-content .sales_report
+{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    height:40vh;
+    width:100%;
+    border:1px solid black;
+    
+}
+
+.body .body-content .sales_report .top
+{
+    display:grid;
+    grid-template-columns: 20% 40% 40%;
+   
+}
+
+.body .body-content .sales_report  .top .chart1
+{
+   color:black;
+   display: grid;
+   grid-template-rows:repeat(3, 33%) ;
+
+}
+
+.body .body-content .sales_report .top .chart1 .box
+{
+    width:100%;
+    height:auto;  
+}
+
+
+.body .body-content .sales_report .top .chart1 .box .fix
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    align-items: center;
+}
+
+.body .body-content .sales_report .top .chart1 .box .fix .center{
+    justify-content: right;
+    display: grid;
+    font-size:20px;
+}
+
+.body .body-content .sales_report .top .chart1 .box .fix .c1{
+    font-weight: bold;
+    font-size:20px
+}
+.body .body-content .sales_report .top .chart1 .box .fix .c2{
+    font-size: 11px;
+}
+
+
+.body .body-content .sales_report .top .chart1 .box .fix2
+{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    align-items: center;
+    position:relative;
+}
+
+.body .body-content .sales_report  .top  .chart1 .box .fix2::after
+{
+    content:"";
+    position:absolute;
+    left:45px;
+    right:45px;
+    top:0;
+    bottom:0;
+    border-top:2px dotted grey;
+    border-bottom:2px dotted grey;
+
+
+}
+
+
+.body .body-content .sales_report .top .chart2
+{
+   width:100%;
+   height:40vh;
+   position:relative;
+}
+.body .body-content .sales_report .top .chart2::after
+{
+    content:"";
+    position:absolute;
+    top:25px;
+    bottom:25px;
+    left:0;
+    right:0;
+    border-left:2px dotted grey;
+    border-right:2px dotted grey;
+
+}
+.body .body-content .sales_report .top .chart2 p,.chart3 p{
+    text-align: center;
+    color:black;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+.body .body-content .sales_report .top .chart3
+{
+    width:100%;
+    height:100%;
+    color:black;
+    justify-content: center;
+    display: grid;
+
+}
+
+.body .body-content .second-row
+{   
+    width:100%;
+    height:70vh;
+    margin-top: 20px;
+}
+
+.body .body-content .second-row .chartff{
+    display:flex;
+    width:auto;
+    height:100%;
+    justify-content: space-between;
+}
+
+.body .body-content .second-row .chartff .secondreport{
+    width:49%;
+    height:100%;
+    background-color: white;
+    justify-content: center;
+    display:grid;
+    text-align: center;
+    border: 1px solid black;
+
+} 
+
+.body .body-content .second-row .chartff .secondreport h3{
+   text-align: center;
+   margin-top: 15px;
+}
+
+.body .body-content .second-row .chartff .thirdreport{
+    width:49%;
+    height:100%;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+   
+}
+.body .body-content  .second-row .thirdreport h3{
+   text-align: center;
+   margin-top: 10px;
+   
+ 
+}
+
+.body .body-content  .third-row{
+    background-color: white;
+    margin-top: 20px;
+    width:100%;
+    height:70vh;
+    display: grid;
+    justify-content: center;
+    border:1px solid black;
+}
+
+.body .body-content  .third-row h3{
+    text-align: center;
+    margin: 15px auto;
+}
+
+/* profile pop out */
+.profile-content {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1000;
+  }
+  .profile {
+    width: 60vw;
+    height: 94vh;
+    background-color: #c4c9d0;
+    border-radius: 20px;
+    margin-left: 15vw;
+  }
+  .profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    background: black;
+    color: white;
+    border-radius: 1vh 1vh 0 0;
+    height: 6vh;
+  }
+  .profile-top #btn123 {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+  }
+  
+  .profile-body-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0vw 0vw 0.3vw 1vw;
+    font-weight: bolder;
+  }
+  
+  .profile-body-2 {
+    width: 97%;
+    padding: 0.5vh;
+    padding-left: 3vw;
+    margin-left: 30px;
+  }
+  .profile-body-2 input {
+    background: none;
+    color: black;
+    height: 4vh;
+    width: 90%;
+    padding: 0vw 0vw 0vw 1vw;
+    cursor: text;
+    border: solid black;
+  }
+  .profile-body-2 input[type='email'],
+  .profile-body-2 input[type='password'] {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  .profile-body-2 input:focus {
+    border: 2px solid black;
+    box-shadow: 0 0 15px white;
+  }
+  
+  .profile-body-2 #edit_btn button {
+    border: 1px solid black;
+    margin-left: 0.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3.5vh;
+    cursor: pointer;
+    background: black;
+    color: whitesmoke;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .profile-body-2 input.halo {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  
+  #save-btn1 {
+    border: 2px solid black;
+    margin-left: 25.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3vh;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px purple;
+    margin-top: 10px;
+  }
+  #save-btn1 input[type='submit'] {
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .chgadmin {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .chg-box {
+    width: 34vw;
+    height: 45vh;
+    background: #c4c9d0;
+    margin-left: 15vw;
+    border-radius: 20px;
+  }
+  .chg-top {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0 1vw;
+    border-radius: 1vh 1vh 0 0;
+  }
+  
+  .chg-top .close-btn {
+    top: 0;
+    right: 0;
+    background: crimson;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+  
+    color: white;
+  }
+  .chg-body {
+    display: flex;
+    padding: 1.5vh 1.5vw;
+  }
+  
+  .chg-body input {
+    width: 30vw;
+    border: 2px solid black;
+    font-size: 0.8vw;
+    padding: 0.5vh 0.5vw;
+    height: 4vh;
+  }
+  
+  .chg-body p {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .chg-body .save-btn input[type='submit'] {
+    width: 3.5vw;
+    height: 3.5vh;
+    cursor: pointer;
+    border-radius: 1vw;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px red;
+  }
+  
+  .save-btn {
+    margin-left: 28vw;
+  }
+  
+  #submit_123 input {
+    margin-left: 26vw;
+    margin-top: 1vh;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+  }
+  

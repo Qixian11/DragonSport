@@ -1,0 +1,872 @@
+.body .body-content
+{
+    padding:3vh 1.5vw 3vh;
+    width:100%
+    
+}
+
+.body .body-content .body-first
+{
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+}
+
+.body .body-content .body-first::after{
+  content:"";
+  position:absolute;
+  top:40px;
+  bottom:40px;
+  left:0;
+  right:0;
+  border-top:5px solid #a7a7a2;
+
+}
+
+.body .body-content .body-first .box
+{
+    width:23.75%;
+    height:15vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items:center;
+    color:white;
+    text-align:center;
+	z-index: 3;
+
+}
+.body .body-content .body-first .box .count
+{
+    font-size:1.25vw;
+    font-weight:bold;
+
+}
+
+.body .body-content .body-first .box p
+{
+    font-size:1vw;
+}
+
+.body .body-content .body-first .box .shoes img
+{
+	width:80px;
+	height:45px;
+	margin-top:5px;
+	
+}
+
+.body .body-content .body-first .box .nike img
+{
+	width:70px;
+	height:40px; 
+	margin-top:4px;
+}
+
+.body .body-content .body-first .box  .adidas img
+{
+	width:60px; 
+	height:50px;
+}
+
+.body .body-content .body-first .box:nth-child(1)
+{
+
+background-image: linear-gradient( 135deg, #FD6585 10%, #0D25B9 100%);
+}
+
+.body .body-content .body-first .box:nth-child(2)
+{
+
+background-image: linear-gradient( 135deg,  #130CB7 10%,  #52E5E7 100%);
+}
+
+.body .body-content .body-first .box:nth-child(3)
+{
+
+	background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+}
+
+.body .body-content .bodysecond
+{
+	width:100%;
+	height:123vh;
+	border-radius: 12px 12px 0px 0px; 
+	background:#e1eef6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  grid-template-rows: 10% 90%;
+  margin-top: 20px;
+ 
+   
+}
+
+.body .body-content .bodysecond .top {
+  background-color:white;
+  height: 100%;
+  border-radius: 12px 12px 0px 0px;
+  border: 1px solid white;
+  display:grid;
+  grid-template-columns: repeat(3,33%);
+
+}
+
+.body .body-content .bodysecond .top .part1{
+  font-size: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.body .body-content .bodysecond .top .part2{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.body .body-content .bodysecond .top .part2 .search{
+  display:grid;
+  justify-content:right;
+  height:80%;
+  width:57%;
+
+
+}
+
+.body .body-content .bodysecond .top .part2 .search-bar {
+  height: 30%;
+  border-bottom: 1px solid black;
+  display: flex;
+  width: 60%;
+  margin-bottom: 5px;
+  
+}
+
+.body .body-content .bodysecond .top .part2 .search-bar input {
+  transition: 0.3s;
+  height: 100%;
+  width: 14vw;
+  border: none;
+  outline: none;
+  font-size: 0.85vw;
+}
+
+.body .body-content .bodysecond .top .part2 .search-bar span {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.1vw;
+  width: 2vw;
+  color: black;
+}
+
+.body .body-content .bodysecond .top .part2  .search-bar input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.body .body-content .bodysecond .top .part3{
+  display: grid;
+  justify-content: right;
+}
+
+.body .body-content .bodysecond .top .part3 .gear{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.body .body-content .bodysecond .top .part3 .gear button{
+  outline: 0;
+  border:none;
+  background-color: white;
+  font-size: 20px;
+  margin-right: 25px;
+}
+
+.body .body-content .bodysecond .top .part3 .gear button :hover{
+	color:red;
+}
+
+.body .body-content .bodysecond .top .part3 .gear button:active{
+	font-size:23px;
+}
+
+.body .body-content .bodysecond .top .part3 .setting{
+  width:90%;
+  height:100%;
+  display: none;
+}
+
+.body .body-content .bodysecond .top .part3 .setting .setright{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.body .body-content .bodysecond .top .part3 .setting  .setright .setdetail{
+  font-size: 10px;
+  height:4vh;
+  width:16vw;
+  display: grid;
+  grid-template-columns: 20% 20% 23% 20%;
+  justify-content: space-around;
+  background-color:#F0E5DE;
+  position:relative;
+
+
+}
+
+.body .body-content .bodysecond .top .part3 .setting .setright .setdetail::before{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border: 1px solid #f0e5de;
+  border-bottom: none;
+  border-right: none;
+  background: #f0e5de;
+  width: 0.80vw;
+  height: 2vh;
+  transform: rotate(45deg);
+  top: -1vh;
+  right: 2.5px;
+
+}
+
+.body .body-content .bodysecond .top .part3 .setting  .setright .setdetail button{
+	background-color:#F0E5DE;
+  color:#9B8281;
+  border:none;
+  outline: 0;
+	
+}
+.body  .body-content .bodysecond .top  .part3 .setting .setright .setdetail button :hover{
+	color:black;
+	font-weight:bold;	
+}
+
+.body .body-content .bodysecond .addproduct_form {
+    display:none; 
+    position: relative;  
+}
+
+.body .body-content .bodysecond .addproduct_form .form{
+    background-color:#54546c;
+    margin:20px auto;
+    width:40vw;
+    height: 90%; 
+    display: grid;
+    grid-template-rows:repeat (9,10vh);
+    justify-content: center;
+ 
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block{
+  width: 100%;
+  height:10vh;
+  color:#a5d296;
+ 
+}
+.body .body-content .bodysecond .addproduct_form .form .block p{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content:center;
+    display: grid;
+    margin-top: 10px;
+}
+
+
+.body .body-content .bodysecond .addproduct_form .form .block .row{
+  display:flex;
+}
+.body .body-content .bodysecond .addproduct_form .form .block .row label
+{
+  display: inline-block;
+  width: 170px;
+  text-align:left;
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block .row textarea{
+    width:50%;
+    height:50px; 
+    padding:0 12px;
+    resize:none;
+    overflow: scroll;
+}
+.body .body-content .bodysecond .addproduct_form .form .block .row textarea::-webkit-scrollbar { 
+  display: none;
+}
+	
+.body .body-content .bodysecond .addproduct_form .form .block .row input[type=text],
+.body .body-content .bodysecond .addproduct_form .form .block .row input[type=number],
+.body .body-content .bodysecond .addproduct_form .form .block .row select{
+    width:50%;
+    height:30px;
+    padding-left:12px;
+
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block .row input:focus{
+    border-color:#2BDE73;
+    outline: 0;
+   
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block .row textarea:focus{
+  border-color:#2BDE73;
+  outline: 0;
+ 
+}
+
+
+.body .body-content .bodysecond .addproduct_form .form .block .row input[type=file]{
+  height: 25px;
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block .ad{
+    text-align:center;
+    margin-top:20px;
+	
+}
+
+.body .body-content .bodysecond .addproduct_form .form .block .ad button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #60a3bc;
+    padding: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    width:100px;
+    height:30px;
+ }
+        
+.body .body-content .bodysecond .addproduct_form .form .block .ad button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.body .body-content .bodysecond .tablelist{
+	background:white;
+  padding:1vw;
+ 
+}
+.body .body-content .bodysecond .tablelist .tablerefresh
+{
+    height:100% ;
+    display:grid;
+    grid-template-rows:99% 1%;
+}   
+
+.body .body-content .bodysecond .tablelist div table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border:1px solid black;
+  font-size:12px;
+  width:100%;
+}
+.body .body-content .bodysecond .tablelist div table  tr:nth-child(odd) {
+  background-color: white;
+
+}
+.body .body-content .bodysecond .tablelist div table  tr:nth-child(even) 
+{
+background-color: #dddddd;
+
+}
+
+.body .body-content .bodysecond .tablelist div table  tr th{
+
+	background:black; 
+	color:white; 
+  height:6vh;
+}
+
+.body .body-content .bodysecond .tablelist div table  tr td{
+  height:12vh;
+  text-align:center;
+}
+
+.body .body-content .bodysecond .tablelist div table .product-tbimg{
+	height:40px;
+}
+
+
+.body .body-content .bodysecond .tablelist div table #data td:nth-child(1),td:nth-child(9){
+    width:8%;   
+    
+}
+
+.body .body-content .bodysecond .tablelist div table #data td:nth-child(2) {
+    width:16%;
+   
+}
+
+.body .body-content .bodysecond .tablelist div table #data  td:nth-child(3),td:nth-child(4),td:nth-child(5),td:nth-child(6) {
+    width:10%;
+}
+
+.body .body-content .bodysecond .tablelist div table #data  td:nth-child(7) {
+    width:13%;
+ 
+}
+  
+.body .body-content .bodysecond .tablelist div table #data  td:nth-child(8) {
+    width:17%;
+    text-align: justify;
+}
+
+.body .body-content .bodysecond .tablelist div table .shdec{
+    overflow:hidden;
+    height:50px;
+    text-align:justify;
+  
+}
+
+.body .body-content .bodysecond .tablelist  div table .actionfucntion button
+{
+    background:none;
+    font-size:1.3vw;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    margin:10px;
+
+}
+.body .body-content .bodysecond .tablelist div .page
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.body .body-content .bodysecond .tablelist  div .page button
+{
+    width:1.25vw;
+    height:2.5vh;
+    background:black;
+    color:white;
+    font-weight:bold;
+    border:1px solid white;
+    cursor:pointer;
+    font-size:0.775vw;
+}
+
+.modal
+{
+    visibility:hidden;
+    opacity:0;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    backdrop-filter: blur(10px);
+    top:0;
+    left:0;
+    z-index:1001;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:0.3s;
+}
+
+.modal .modal-container
+{
+    background:white;
+    width:40vw;
+    display:grid;
+    grid-template-rows:5% 95%;
+    border-radius:1vh;
+
+
+}
+
+.modal .modal-container .modal-head
+{
+    background:black;
+    border-radius:1vh 1vh 0 0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    color:white;
+    padding:0 1vw;
+}
+
+.modal .modal-container .modal-head h3
+{
+    font-size:1.05vw;
+}
+
+.modal .modal-container .modal-head button
+{
+    font-size:1vw;
+    background:none;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    color:white;
+}
+
+.modal .modal-container .modal-body
+{
+    padding:1.5vh 1vw;
+    height:100%;
+}
+.modal .modal-container .modal-body .paragraph .attribute
+{
+    font-size:0.85vw;
+    font-weight:bold;
+}
+
+.modal .modal-container .modal-body .paragraph .input
+{
+    margin-top:0.5vh;
+    position:relative;
+    height:4vh;
+
+}
+
+.modal .modal-container .modal-body .paragraph .input input, select
+{
+    width:100%;
+    height:100%;
+    font-size:0.9vw;
+    padding:0 0.5vw;
+
+}
+
+.modal .modal-container .modal-body .paragraph .input textarea
+{
+	width:38vw; 
+	height:10vh;
+	resize:none;
+
+
+}
+
+.modal .modal-container .modal-body .paragraph .input i
+{
+    position:absolute;
+    top:32.5%;
+    right:0.5vw;
+    font-size:0.9vw;
+
+}
+
+.modal .modal-container .modal-body .paragraph .error
+{
+    color:red;
+    font-size:0.8vw;
+}
+
+.modal .modal-container .modal-body .notification
+{
+    text-align:right;
+    color:#98fb98;
+
+
+}
+
+.modal .modal-container .modal-body .notification span
+{
+    display:none;
+ 
+   
+}
+
+.modal .delete-c
+{
+    height:40vh;
+    display:grid;
+    justify-content:center;
+    grid-template-rows:40% 35% 25%;
+    background-color:rgb(253, 249, 249);
+   
+}
+
+.modal .delete-c div
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;;
+  
+}
+
+.modal .delete-c .delete-icon
+{
+    font-size:8vw;
+    color:#F32013
+}
+
+.modal .delete-c .delete-alert
+{
+    display:block;
+    text-align:center;
+    padding-top:3vh;
+}
+
+.modal .delete-c .delete-alert p:nth-child(1)
+{
+    font-weight:bold;
+    font-size:1.2vw;
+}
+
+.modal .delete-c .delete-confirm
+{
+    justify-content:space-around;
+    width:20vw;
+    margin:0 auto;
+}
+
+.modal .delete-c .delete-confirm button
+{
+    height:4vh;
+    width:6vw;
+    cursor:pointer;
+    border:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.modal .delete-c .delete-confirm button:nth-child(1)
+{
+    background:#cce5ff;
+}
+
+.modal .delete-c .delete-confirm button:nth-child(1):hover
+{
+    background:#2890FF;
+}
+
+.modal .delete-c .delete-confirm button:nth-child(2)
+{
+    background:#f8d7da;
+}
+
+.modal .delete-c .delete-confirm button:nth-child(2):hover
+{
+    background:#DF4B57;
+}
+
+/* profile pop out */
+.profile-content {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1000;
+  }
+  .profile {
+    width: 60vw;
+    height: 94vh;
+    background-color: #c4c9d0;
+    border-radius: 20px;
+    margin-left: 15vw;
+  }
+  .profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    background: black;
+    color: white;
+    border-radius: 1vh 1vh 0 0;
+    height: 6vh;
+  }
+  .profile-top #btn123 {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+  }
+  
+  .profile-body-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0vw 0vw 0.3vw 1vw;
+    font-weight: bolder;
+  }
+  
+  .profile-body-2 {
+    width: 97%;
+    padding: 0.5vh;
+    padding-left: 3vw;
+    margin-left: 30px;
+  }
+  .profile-body-2 input {
+    background: none;
+    color: black;
+    height: 4vh;
+    width: 90%;
+    padding: 0vw 0vw 0vw 1vw;
+    cursor: text;
+    border: solid black;
+  }
+  .profile-body-2 input[type='email'],
+  .profile-body-2 input[type='password'] {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  .profile-body-2 input:focus {
+    border: 2px solid black;
+    box-shadow: 0 0 15px white;
+  }
+  
+  .profile-body-2 #edit_btn button {
+    border: 1px solid black;
+    margin-left: 0.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3.5vh;
+    cursor: pointer;
+    background: black;
+    color: whitesmoke;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .profile-body-2 input.halo {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  
+  #save-btn1 {
+    border: 2px solid black;
+    margin-left: 25.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3vh;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px purple;
+    margin-top: 10px;
+  }
+  #save-btn1 input[type='submit'] {
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .chgadmin {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .chg-box {
+    width: 34vw;
+    height: 45vh;
+    background: #c4c9d0;
+    margin-left: 15vw;
+    border-radius: 20px;
+  }
+  .chg-top {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0 1vw;
+    border-radius: 1vh 1vh 0 0;
+  }
+  
+  .chg-top .close-btn {
+    top: 0;
+    right: 0;
+    background: crimson;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+  
+    color: white;
+  }
+  .chg-body {
+    display: flex;
+    padding: 1.5vh 1.5vw;
+  }
+  
+  .chg-body input {
+    width: 30vw;
+    border: 2px solid black;
+    font-size: 0.8vw;
+    padding: 0.5vh 0.5vw;
+    height: 4vh;
+  }
+  
+  .chg-body p {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .chg-body .save-btn input[type='submit'] {
+    width: 3.5vw;
+    height: 3.5vh;
+    cursor: pointer;
+    border-radius: 1vw;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px red;
+  }
+  
+  .save-btn {
+    margin-left: 28vw;
+  }
+  
+  #submit_123 input {
+    margin-left: 26vw;
+    margin-top: 1vh;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+  }
+  

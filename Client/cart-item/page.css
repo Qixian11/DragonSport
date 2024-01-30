@@ -1,0 +1,296 @@
+*
+{margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+nav{display:flex;
+	justify-content:space-around;
+	align-items:center;
+	height:7vh;
+	font-family: 'Poppins', sans-serif;
+	width:100%;
+	background:black;
+	position:sticky;
+	top:0;
+}
+
+.logo{margin-left:3%;}
+
+.logo img{width:3.5vw;
+		  
+}
+
+.nav-link{display:inline-flex;
+		  margin-left:2%;
+		  justify-content:space-around;
+		  align-items:center;
+		  width:50%;
+		  height:4vh;
+}
+
+.nav-link a
+{
+	margin:0 0.2vw;
+	color:#dfd9d3;
+	text-decoration:none;
+	letter-spacing:0.3vh;
+	font-weight:bold;
+	font-size:1.2vw;
+}
+  
+.nav-link a:hover
+{
+	color:white;	
+}
+  
+.nav-link ul
+{
+	top:4vh;
+	position:absolute;
+	opacity:1;
+	visibility:hidden;
+}
+
+.nav-link ul li
+{
+	background-color:black;
+	padding:1vh 0 1vh;
+	border-top:2px solid white;
+	position:relative;
+	top:3vh;
+	display:list-item;
+	width:8vw;
+	text-align:center;
+}
+
+.nav-link ul li .fas
+{	
+	float:right;
+	position:relative;
+	font-size:2vh;
+	right:1vw;
+	top:0.6vh;
+}
+
+.nav-link ul li a
+{
+	color:#dfd9d3;
+}
+
+.nav-link li{list-style:none;
+			 width:8vw;
+			 text-align:center;
+}
+
+.nav-link li .fa-caret-down
+{
+	display:block;
+	text-align:center;
+	display:none;
+	color:white;
+}
+
+.nav-link li:hover > .fa-caret-down
+{
+	display:block;
+}
+
+.nav-link li:hover > ul
+{
+	opacity:1;
+	visibility:visible;
+}
+
+.search-bar
+{
+	width:20vw;
+	height:4vh;
+	display:flex;
+	border-radius:3vh;
+	margin-left:1.9vw;
+	border:0.15vw solid #dfd9d3;
+	position:relative;
+}
+
+.search-bar input
+{	
+	background:none;
+	width:18vw;
+	height:100%;
+	border:none;
+	border-radius:3vh 0 0 3vh;
+	outline:none;
+	padding:0 1vw;
+	color:white;
+	font-size:0.9vw;
+	position:absolute;
+}
+
+::placeholder
+{
+	color:white;
+}
+
+.search-bar .icon
+{
+	position:absolute;
+	height:3.5vh;
+	width:2vw;
+	right:0;
+	top:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.search-bar .icon i
+{
+	color:#dedede;
+	font-size:1vw;
+}
+
+.wishandcart .wishlist
+{
+	color:#dfd9d3;
+	font-size:2.7vh;
+	transition:0.5s;
+}
+
+.wishandcart .wishcount
+{
+	position:absolute;
+	font-size:0.7vw;
+	color:black;
+	border:1px solid black;
+	border-radius:100%;
+	background-color:white;
+	height:2vh;
+	width:1vw;
+	text-align:center;
+	left:1.9vw;
+}
+
+.wishandcart .shoppingcart
+{
+	font-size:2.7vh;
+	color:#dfd9d3;
+	transition:0.5s;
+}
+
+.wishandcart .cartcount
+{
+	position:absolute;
+	font-size:0.7vw;
+	color:black;
+	border:1px solid black;
+	border-radius:100%;
+	background-color:white;
+	height:2vh;
+	width:1vw;
+	text-align:center;
+	left:5.5vw;
+	top:0.05vw;
+}
+
+.wishandcart .shoppingcart:hover{font-size:3vh;}
+.wishandcart .wishlist:hover{font-size:3vh; color:red;}
+
+.wishandcart
+{
+	display:flex;
+	align-items:center;
+	position:relative;
+	width:7%;
+	margin-left:1vh;
+	justify-content:space-around;
+}
+
+.account
+{
+	width:11%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.account .profile
+{
+	width:2.5vw;
+	height:4.5vh;
+	background:none;
+	outline:none;
+	border:none;
+	color:white;
+}
+
+.account .profile i{font-size:1.3vw;}
+
+.account .profile-name
+{
+	width:8vw;
+	text-align:center;
+	font-size:0.85vw;
+	color:white;
+}
+
+.account .profile-list
+{
+	position:absolute;
+	right:0;
+	margin-top:20.5vh;
+	z-index:1000;
+	background-color:white;
+	border:1px solid black;
+	width:11vw;
+	display:none;
+}
+
+.account .profile-list li
+{
+	list-style:none;
+	padding:2vh 0;
+	text-align:center;
+}
+
+.account .profile-list li a
+{
+	color:black;
+	text-decoration:none;
+	font-size:1vw;
+}
+
+.account .profile-list li input
+{
+	background-color:white;
+	border:none;
+	font-family: 'Poppins', sans-serif;
+	font-size:1vw;
+}
+
+.account .profile-list li input:hover{cursor:pointer;}
+
+.account .profile-list li:nth-child(1){border-bottom:1px solid black;}
+
+.account a button
+{
+	width:5vw;
+	height:3.5vh;
+	height:3.5vh;
+	font-family: 'Poppins', sans-serif;
+	background:none;
+	border:none;
+	font-weight:bold;
+	font-size:0.85vw;
+	color:#dfd9d3;
+}
+
+.account button:hover
+{
+	background-color:white;
+	color:black;
+	cursor:pointer;
+}
+
+.account a:nth-child(1){border-right:1px solid white;}
+.account .profile-list a:nth-child(1){border:none;}

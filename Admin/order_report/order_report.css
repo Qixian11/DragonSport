@@ -1,0 +1,378 @@
+.body .body-content
+{
+    padding:3vh 1.5vw 3vh;
+    height:auto;
+}
+
+.body .body-content .order{
+    width: 100%;
+    height:125vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.body .body-content .order .top{
+    height:100%;
+}
+
+.body .body-content .order .top .order-title{
+    padding:5px;
+    
+ }
+ .body .body-content .order .top .order-title p{
+     margin:10px auto 0 22px;
+     font-weight: bold;
+     font-size: 24px;  
+ }
+ 
+ .body .body-content .order .top .search{
+     justify-content: end;
+     display: grid;  
+     grid-template-rows: 20px;
+     padding-right: 27px;
+    
+ }
+ .body .body-content .order .top .search .search-bar {
+     height: 100%;
+     border-bottom: 1px solid black;
+     margin-bottom: 8px;
+     width: 100%;  
+     display: flex;
+   
+   }
+   
+   .body .body-content .order .top .search .search-bar input {
+     transition: 0.3s;
+     height: 100%;
+     width: 12vw;
+     outline: none;
+     border:none;
+     font-size: 0.85vw;
+   }
+ 
+   .body .body-content .order .top .search .search-bar span {
+     background: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     font-size: 1.1vw;
+     width: 2vw;
+     color: rgb(0, 0, 0);
+   }
+   
+   .body .body-content .order .top .search .search-bar input::-webkit-search-cancel-button {
+     display: none;
+   }
+
+.body .body-content .order .content{
+    height:100%;
+    padding:2vh 3vh 0 ;
+}  
+
+.body .body-content .order  .content .table{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 98% 2%;
+
+}
+.body .body-content .order .content .table table{
+    border-collapse:collapse;
+    font-size: 13px;  
+    border:1px solid black;
+}
+
+.body .body-content .order .content .table table th{
+    background-color: black;
+    color:white;
+    height:7vh; 
+}
+
+.body .body-content .order .content .table table #head th:nth-child(1){
+    width:15%;
+  
+}
+.body .body-content .order .content .table table #head th:nth-child(2){
+    width:10%;
+
+}
+
+.body.body-content .order .content .table  table #head th:nth-child(3){
+    width:15%;
+   
+   
+}
+
+.body .body-content .order .content .table  table #head th:nth-child(4){
+    width:15%;
+
+}
+
+.body .body-content .order .content .table table  #head th:nth-child(5){
+    width:15%;
+    
+}
+.body .body-content .order .content .table table  #head th:nth-child(6){
+    width:10%;
+    text-align: center;
+}
+.body .body-content .order .content .table table  #content{
+  height:8vh;
+}
+
+.body .body-content .order .content .table  #content td{
+  text-align: center;
+}
+
+.body .body-content .order .content .table #content td:nth-child(3){
+
+    overflow: hidden;  
+}
+.body .body-content .order .content .table table  tr:nth-child(even)
+{
+    background-color: #dddddd;
+    width:100%; 
+}
+
+.body .body-content .order .content .table .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .body .body-content .order .content .table .page button {
+    width: 1.25vw;
+    height: 2.5vh;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 0.775vw;
+    margin-bottom: 10px;
+  }
+
+/* profile pop out */
+.profile-content {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1000;
+  }
+  .profile {
+    width: 60vw;
+    height: 94vh;
+    background-color: #c4c9d0;
+    border-radius: 20px;
+    margin-left: 15vw;
+  }
+  .profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    background: black;
+    color: white;
+    border-radius: 1vh 1vh 0 0;
+    height: 6vh;
+  }
+  .profile-top #btn123 {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    align-items: center;
+    padding-bottom: 40px;
+    color: white;
+  }
+  
+  .profile-body-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 0vw 0vw 0.3vw 1vw;
+    font-weight: bolder;
+  }
+  
+  .profile-body-2 {
+    width: 97%;
+    padding: 0.5vh;
+    padding-left: 3vw;
+    margin-left: 30px;
+  }
+  .profile-body-2 input {
+    background: none;
+    color: black;
+    height: 4vh;
+    width: 90%;
+    padding: 0vw 0vw 0vw 1vw;
+    cursor: text;
+    border: solid black;
+  }
+  .profile-body-2 input[type='email'],
+  .profile-body-2 input[type='password'] {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  .profile-body-2 input:focus {
+    border: 2px solid black;
+    box-shadow: 0 0 15px white;
+  }
+  
+  .profile-body-2 #edit_btn button {
+    border: 1px solid black;
+    margin-left: 0.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3.5vh;
+    cursor: pointer;
+    background: black;
+    color: whitesmoke;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .profile-body-2 input.halo {
+    height: 4vh;
+    padding: 0vw 0vw 0.3vw 1vw;
+    border: solid black;
+    color: red;
+    cursor: no-drop;
+    background: none;
+  }
+  
+  #save-btn1 {
+    border: 2px solid black;
+    margin-left: 25.8vw;
+    border-radius: 20px;
+    width: 3vw;
+    height: 3vh;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px purple;
+    margin-top: 10px;
+  }
+  #save-btn1 input[type='submit'] {
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  .chgadmin {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .chg-box {
+    width: 34vw;
+    height: 45vh;
+    background: #c4c9d0;
+    margin-left: 15vw;
+    border-radius: 20px;
+  }
+  .chg-top {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 0 1vw;
+    border-radius: 1vh 1vh 0 0;
+  }
+  
+  .chg-top .close-btn {
+    top: 0;
+    right: 0;
+    background: crimson;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: 3px;
+  
+    color: white;
+  }
+  .chg-body {
+    display: flex;
+    padding: 1.5vh 1.5vw;
+  }
+  
+  .chg-body input {
+    width: 30vw;
+    border: 2px solid black;
+    font-size: 0.8vw;
+    padding: 0.5vh 0.5vw;
+    height: 4vh;
+  }
+  
+  .chg-body p {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  .chg-body .save-btn input[type='submit'] {
+    width: 3.5vw;
+    height: 3.5vh;
+    cursor: pointer;
+    border-radius: 1vw;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px red;
+  }
+  
+  .save-btn {
+    margin-left: 28vw;
+  }
+  
+  #submit_123 input {
+    margin-left: 26vw;
+    margin-top: 1vh;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    box-shadow: 0 0 10px white;
+  }
+
+  
+
+
+
+
+
+
+
+

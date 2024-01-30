@@ -1,0 +1,186 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav
+{
+    background:#3c4b64;
+    height:100vh;
+    width:13vw;
+    position:fixed;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+
+nav .logo
+{
+    background:#303c54;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    height:6.5vh;
+}
+
+nav .logo p
+{
+    display:flex;
+    align-items:center;
+    font-size:0.8vw;
+}
+
+nav .logo img
+{
+    width:2.5vw;
+    margin-right:0.5vw;
+}
+
+nav .navbar-content .navbar-list ul p
+{
+    text-transform:uppercase;
+    padding-left:0.75vw;
+    color:	#c4c9d0;
+    font-size:0.6vw;
+    height:6vh;
+    padding-top:3vh;
+    font-weight:bold;
+}
+
+nav .navbar-content{padding:2vh 0;}
+
+nav .navbar-content .navbar-list ul li
+{
+    height:5vh;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+nav .navbar-content .navbar-list ul li a
+{
+    color:#c4c9d0;
+    font-weight:100;
+    padding-left:0.75vw;
+    text-decoration:none;
+}
+
+nav .navbar-content .navbar-list ul li a .lni
+{
+    font-size:1vw;
+    width:1.15vw;
+    height:2.5vh;
+}
+
+nav .navbar-content .navbar-list ul li a span
+{
+    margin-left:1vw;
+    display:inline-block;
+    font-size:0.8vw;
+    width:8vw;
+}
+
+nav .navbar-content .navbar-list ul li:hover
+{
+    background:#321fdb;
+}
+
+nav .navbar-content .navbar-list ul li a .lni-chevron-left
+{
+    font-size:0.6vw;
+    margin-left:1vw;
+    width:0.6vw;
+    height:1.5vh;
+    transition:0.3s;
+}
+
+nav .navbar-content .navbar-list ul .user-drop-section, .staff-drop-section, .product-drop-section
+{
+    display:none;
+    background:#303c54;
+}
+
+.body
+{
+    background:#ebedef;
+    max-width:87vw;
+    margin-left:13vw;
+    min-height:93.5vh;
+    transition:0.5s;
+}
+
+.body-head
+{
+    height:6.5vh;
+    max-width:87vw;
+    background:white;
+    display:flex;
+    align-items:center;
+    padding:0 1.5vw;
+    justify-content:space-between;
+    margin-left:13vw;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    transition:0.5s;
+}
+
+.body-head button
+{
+    background:none;
+    border:none;
+    outline:none;
+    font-size:1vw;
+    cursor:pointer;
+}
+
+.body-head .digital-clock
+{
+    letter-spacing:0.1vw;
+    font-size:0.9vw;
+}
+
+.body-head .admin-profile
+{
+    width:2vw;
+    height:3.9vh;
+    border-radius:50%;
+    border:1px solid black;
+    text-align:center;
+    font-size:1.15vw;
+    cursor:pointer;
+}
+
+.body-head .admin-profile div
+{
+    background:white;
+    border:1px solid #8a93a2;
+    position:absolute;
+    right:0;
+    top:6vh;
+    z-index:1000;
+    width: 7vw;
+    display:none;
+}
+
+.body-head .admin-profile div li
+{
+    list-style:none;
+    text-align:center;
+    height:5vh;
+    padding:0.8vh;
+}
+
+.body-head .admin-profile div li:nth-child(1){border-bottom:1px solid #8a93a2;}
+
+.body-head .admin-profile div li button, a
+{
+    text-decoration: none;
+    font-size:0.8vw;
+    color:#8a93a2;
+}

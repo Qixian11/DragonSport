@@ -1,0 +1,399 @@
+.basket{
+    width:98vw;
+    height:auto;
+}
+
+.basket .baskettitle{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+  
+}
+.basket .baskettitle .cart{
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.basket .basket_item table {
+    margin-top: 20px;
+    width: 90vw;
+    border-collapse: collapse;
+    margin-left: 40px;
+   
+}
+
+.basket .basket_item table tr th:nth-child(1){
+    width:10vw;
+  
+}
+
+.basket .basket_item table tr th:nth-child(2){
+    width:23vw;
+  
+}
+
+.basket .basket_item table tr th:nth-child(3){
+    width:7vw;
+
+ 
+}
+
+.basket .basket_item table tr th:nth-child(4){
+    width:10vw;
+ 
+}
+
+.basket .basket_item table tr th:nth-child(5){
+    width:10vw;
+  
+}
+
+.basket .basket_item table tr th:nth-child(6){
+    width:10vw;
+  
+}
+
+
+.basket .basket_item table tr th:nth-child(7){
+    width:10vw;  
+}
+
+.basket .basket_item table tr th:nth-child(8){
+    width:5vw;
+  
+}
+
+
+.basket .basket_item table tr th{
+    border-top: 1.3px solid black;
+    border-bottom: 1.3px solid black;
+    height:8vh;
+    font-weight: bold;
+    font-size:20px;
+      
+}
+
+.basket .basket_item table .content td{
+    height:15vh;
+    font-size: 18px;
+    border-bottom:1px solid grey;
+}
+
+.basket .basket_item table .content td .img{
+    width:10vw;
+    height:15vh
+}
+
+.basket .basket_item table .content td input{
+    text-align: center;
+}
+.basket .basket_item table .content td:nth-child(1){
+    width:12vw;
+    padding-left: 10px;
+}
+.basket .basket_item table .content td:nth-child(2), td:nth-child(3),td:nth-child(4),td:nth-child(5),td:nth-child(6),td:nth-child(7),td:nth-child(8){
+    text-align: center;
+  
+}
+
+.basket .basket_item table .content .delbtn {
+    cursor: pointer;
+    color:rgb(199, 199, 199);
+    font-size: 25px;
+    opacity: 0.6;
+    background-color: white;
+    border:none;
+
+  }
+  
+.basket .basket_item table .content .delbtn:hover {
+      color:red;
+ }
+
+
+ .basket .right{
+    justify-content: right;
+    display:grid;
+    width:98vw;
+ }
+.basket .right .cal{
+    width:25vw;
+    height:50vh;
+    margin-right: 63px;
+    margin-top: 10px;
+    
+}
+
+.basket  .right .cal .sumhe{
+    margin-top:10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height:8vh;
+}
+.basket  .right .cal .sumhe h3{
+    height:100%;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    font-size: 23px;
+
+}
+
+.basket  .right .cal .content{
+    display:flex;
+    height:20vh;
+    margin-top: 10px;
+}
+
+.basket  .right .cal .content .sumcen{
+    height:100%;
+    width:15vw;
+    display: grid;
+    font-size: 20px;
+    justify-content: space-between;
+  
+}
+
+.basket  .right .cal .content .sumcennum{
+    width:10vw;
+    height:100%;
+    font-size: 20px; 
+    display: grid;
+    grid-template-rows: repeat(3,35%);
+
+}
+
+.basket  .right .cal .content .sumcennum div{
+    display: flex;
+    justify-content:space-between ;
+    height:100%;
+}
+
+.basket  .right .cal .sumtot{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height:7vh;
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    font-size: 23px;
+    align-items: center;
+    font-weight:bold;
+}
+
+.basket .right .cal .sumtot .total_g_s{
+       display: grid;
+       justify-content: end;    
+ }
+
+ .basket .right .cal .chkoutbtn{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.basket .right .cal .chkoutbtn button {
+    display: inline-block;
+    height:6vh;
+    width:10vw;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    font-size: 13px;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline:none;
+
+  }
+  
+  .basket  .right .cal .chkoutbtn  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .basket  .right .cal .chkoutbtn  button span:after {
+    content: '\00bb\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .basket  .right .cal .chkoutbtn  button:hover span {
+    padding-right: 25px;
+  }
+  
+  .basket  .right .cal .chkoutbtn  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal .modal-content {
+    background-color: #000000;
+    margin:-8px auto;
+    width: 45vw;
+    height:70vh;
+    color: ghostwhite;
+    display: grid;
+    justify-content: center;
+  }
+
+  .modal .modal-content .close {
+    color: #aaaaaa;
+    display: grid;
+    justify-content: right;
+    font-size: 30px;
+    font-weight: bold;  
+    margin-right: -20px;
+
+  }
+  
+  .modal .modal-content .close:hover,
+  .modal .modal-content .close:focus {
+    color: rgb(230, 57, 57);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+ .modal .modal-content .pay-title{
+    text-align:center;
+    align-items: center;
+    font-weight:bold;
+    height:5vh;
+    font-size:27px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+ 
+   
+ }
+
+ .modal .modal-content .payment{
+    font-size:14px;
+    font-family: 'Lato', sans-serif;
+    width:40vw;
+    height:55vh;
+    margin-top: 10px;
+
+ } 
+
+.modal .modal-content .payment .box{
+    height:13vh;
+    width:35vw;
+    margin:auto;
+ } 
+ .modal .modal-content .payment .name{
+     margin-bottom: 3px;
+ } 
+
+ .modal .modal-content .payment .box input{
+ border:2px solid rgb(255, 230, 0);
+ font-size: 15px;
+ }
+
+.modal .modal-content .payment .box input:hover {
+    border-color: rgb(103, 211, 150);
+}
+
+.modal .modal-content .payment .box input:focus{
+     outline: 0;
+     border-color: red;
+ } 
+
+.modal .modal-content .payment .box input::-webkit-input-placeholder {
+    color: rgb(211, 210, 210);
+}
+
+ .modal .modal-content .payment .box .p1{
+     width:100%;   
+ }
+ 
+ .modal .modal-content .payment .box .p1 input{
+     width:100%;
+     height:6vh;
+ }
+
+ .modal .modal-content .payment .box .p2{
+    display: flex;
+    justify-content: space-between;
+    width:35vw;
+ }
+
+ .modal .modal-content .payment .box .p2 input{
+     width:16vw;
+     height:6vh;
+    
+ }
+ .modal .modal-content .payment .box .p3{  
+    display:grid;
+    grid-template-columns: 25% 25% 50%;
+ 
+ }
+ .modal .modal-content .payment .box .p3 select{
+    height:6vh;
+    width:7vw;
+    justify-content: space-between;
+ 
+ }
+ .modal .modal-content .payment .box .p3 .image{
+    
+     justify-content: right;
+     display: grid;
+ 
+ }
+
+ .modal .modal-content .payment .box .p3 .image img{
+     width:10vw;
+     height:6vh;
+ }
+
+/*button pay*/
+.modal .modal-content .payment .box .button{
+    text-align:center;
+    margin-top:25px;
+}
+
+.button input[type=submit] {
+    min-width: 150px;
+    min-height: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .button input[type=submit]:hover, .button input[type=submit]:focus {
+    color:rgb(255, 255, 255);
+    transform: translateY(-6px);
+  }
+  
+  
+
