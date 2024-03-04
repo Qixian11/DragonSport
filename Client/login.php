@@ -15,7 +15,7 @@ if(empty($_SESSION["loginactive"]))
 
 .nav_background
 {
-	background-image:url("banner/FY16_INNO_RN_AEROSWIFT_BASKETBALL_KDURANT_DYNAMIC_hd_1600.jpg");
+	background-image:url("banner/loginbg.jpg");
 	height:100vh;
 	background-size:cover;
 }
@@ -306,11 +306,10 @@ nav:hover
 .login
 {
 	font-family:sans-serif;
-	width:25vw;
-	
+	width:35%;
 	text-align:center;
 	position:absolute;
-	background: rgba(35, 31, 31,0.75);
+	background: rgba(248, 248, 225,0.30);
 }
 
 .login input[type = "text"], .login input[type = "password"]
@@ -350,7 +349,7 @@ nav:hover
 }
 .login input[type = "text"]:focus, .login input[type = "password"]:focus
 {
-	border-color:#2ecc71;
+	border-color:red;
 	width:17vw;
 }
 

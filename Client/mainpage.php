@@ -29,8 +29,8 @@ html
 
 .nav_background
 {
-	background-image:url("banner/SP15_JD_ALLSTAR_KAWHILEONARD_ACTION_PRIMARY_hd_1600.jpg");
-	height:90vh;
+	background-image:url("banner/shoes.jpg");
+	height:80vh;
 	background-size:cover;
 }
 
@@ -474,7 +474,7 @@ h1
 .second .hotsales-body .hotsales-item .hotsales-detail .shoes-more span a
 {
 	text-decoration:none;
-	color:black;
+	color:red;
 	font-weight:bold;
 	font-size:0.9vw;
 }
@@ -520,12 +520,7 @@ h1
 	margin-top:8vh;
 }
 
-.decoration video
-{
-	width:94vw;
-	height:70vh;
-	object-fit: fill;
-}
+
 
 .third
 {
@@ -691,6 +686,8 @@ h1
 	object-fit:cover;
 	transition:0.3s;
 }
+
+
 
 .fifth .new-img .new-slide
 {
@@ -1058,9 +1055,9 @@ $hotsales_results = mysqli_query($connect, "SELECT Shoes_ID, Shoes_Name, Shoes_I
 	</div>
 
 	<div class = "decoration">
-		<video autoplay loop muted inline>
-			<source src="mainpage-item/GOAT- Buy and Sell Authentic Sneakers.mp4" type="video/mp4">
-		</video>
+		<div class = "newcoming">			
+		<img src="mainpage-item/comingshoes.gif"  style="width: 100%;"><div>
+		<div>
 	</div>
 
 	<div class = "third">

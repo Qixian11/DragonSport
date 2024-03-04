@@ -24,8 +24,8 @@ $_SESSION["previous_page"] = $_SERVER["PHP_SELF"];
 
 .nav_background
 {
-	background-image:url("banner/543256.jpg");
-	height:90vh;
+	background-image:url("banner/adidasgirl.jpg");
+	height:85vh;
 	background-size:cover;
 }
 

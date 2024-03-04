@@ -1,0 +1,148 @@
+.popup .title {
+    height: 7vh;
+    width: 20vw;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    text-align: Center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%) scale(0);
+    width: 350px;
+    height: 450px;
+    z-index: 2;
+    background: #454545;
+    box-shadow: 5px 5px 20px #cad7e2;
+    color: white;
+}
+
+.popup .content .input-container {
+    padding-left: 5%;
+}
+
+.popup .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.popup video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 5px 5px 15px white -5px -5px 15px white;
+    cursor: pointer;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.input-field .validate {
+    width: 85%;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 15px;
+    color: #bfc0c0;
+    background: #262626;
+    box-shadow: inset 5px 5px 5px #232323, inset -5px -5px 5px #292929;
+    outline: none;
+    height: 4vh;
+
+}
+
+.first-button {
+    color: white;
+    font-size: 18px;
+    font-weight: 500px;
+    padding: 30px 50px;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #262626;
+    box-shadow: 1px 1px 15px black;
+    cursor: pointer;
+    outline: none;
+}
+
+.first-button:active {
+    background: linear-gradient(#222222, #292929);
+    box-shadow: 1px 1px 10px white;
+    border: none;
+}
+
+.second-button {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background: #262626;
+    box-shadow: 1px 1px 10px white;
+    cursor: pointer;
+    outline: none;
+    width: 10vw;
+}
+
+.content .almbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+}
+
+.fgtpass {
+    font-size: 2vh;
+    text-decoration: underline;
+    text-align: right;
+    padding-right: 10%;
+    height: 5vh;
+    padding-top: 10px;
+
+}
+
+.fgtpass a {
+    color: white;
+
+}
+
+.fa-eye {
+    color: white;
+    cursor: pointer;
+    font-size: 1.2vw;
+    transition: 0.25s;
+}

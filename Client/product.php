@@ -24,8 +24,8 @@ $_SESSION["previous_page"] = $_SERVER["PHP_SELF"];
 
 .nav_background
 {
-	background-image:url("banner/FY16_INNO_RN_AEROSWIFT__USA___SPRINT_AFELIX_DYNAMIC_hd_1600.png");
-	height:90vh;
+	background-image:url("banner/sport.jpg");
+	height:80vh;
 	background-size:cover;
 }
 
